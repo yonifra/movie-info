@@ -23,7 +23,7 @@ code {
 
 .wrapper-rows {
   display: grid;
-  grid-template-rows: 20% 30%;
+  grid-template-rows: 10% 50% 10% 10%;
   grid-gap: 10px;
   background-color: #fff;
   color: #fff;

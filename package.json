@@ -2,10 +2,19 @@
   "name": "movie-info",
   "version": "0.1.0",
   "private": true,
+  "author": "Jonathan Fraimorice",
+  "license": "MIT",
   "dependencies": {
+    "bloodhound-js": "^1.2.1",
+    "es6-promise": "^4.0.5",
+    "fetch-ie8": "^1.4.3",
+    "numeral": "^1.4.5",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "typeahead": "^0.2.2",
+    "whatwg-fetch": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

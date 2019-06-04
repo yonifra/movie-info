@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-// import {fetchMovie} from '../utils/TmdbApi'
-import MovieCard from './MovieCard'
 import {apiKey} from '../constants/api.js'
 
-class MovieInformation extends Component {
-    constructor(props) {
+// TODO: For future development, this will replace the search bar inside the MovieInformation component
+class SearchBar extends Component {
+     constructor(props) {
         super(props);
         this.state = {movie: {}, query: null};
 
@@ -39,14 +38,9 @@ class MovieInformation extends Component {
                     </label>
                     <input type="submit" value="Search" />
                 </form>
-                <MovieCard movie={this.state.movie} />
             </div>
         );
     }
-
-    componentDidMount() {
-        this.fetchMovie('get out')
-    }
 }
 
-export default MovieInformation;
+export default SearchBar;
