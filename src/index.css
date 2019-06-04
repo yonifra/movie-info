@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.wrapper {
+.wrapper-cols {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-gap: 10px;
@@ -21,7 +21,7 @@ code {
   color: #333;
 }
 
-.wrapper2 {
+.wrapper-rows {
   display: grid;
   grid-template-rows: 20% 30%;
   grid-gap: 10px;
