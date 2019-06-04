@@ -14,15 +14,24 @@ code {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 600px 100px;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+  padding: 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-rows: 20% 30%;
   grid-gap: 10px;
   background-color: #fff;
-  color: #444;
+  color: #fff;
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  background-color: #fff;
+  color: #444;
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
