@@ -34,8 +34,7 @@ class MovieInformation extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>
-                        Search for Movie:
-                        <input type="text" value={this.state.query} onChange={this.handleChange} />
+                        <input type="text" value={this.state.query} onChange={this.handleChange} placeholder='Search movie title'/>
                     </label>
                     <input type="submit" value="Search" />
                 </form>
