@@ -10,8 +10,11 @@
 
 # production
 /build
+/dist
 
 api.js
+
+dependencygraph.svg
 
 # misc
 .DS_Store

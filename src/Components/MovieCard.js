@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as moment from 'moment';
+// import * as moment from 'moment';
 let numeral = require('numeral');
 
 const TMDBLogo = "../img/tmdb.png";
@@ -10,13 +10,11 @@ class MovieCard extends Component {
     render() {
         let data = this.props.movie
 
-        let posterIMG = 'https://image.tmdb.org/t/p/w500' + data.poster,
+        let posterIMG = moviePosterBaseUrl + data.poster,
           production = data.production,
-          productionCountries = data.production_countries,
           genres = data.genre,
           totalRevenue = data.revenue,
           productionList = nestedDataToString(production),
-          productionCountriesList = nestedDataToString(productionCountries),
           noData = '-',
           genresList = nestedDataToString(genres)
           backdropImg = 'https://image.tmdb.org/t/p/original' + data.backdrop;
@@ -39,8 +37,7 @@ class MovieCard extends Component {
         }
 
         return (
-            <div className="col-xs-12 cardcont nopadding">
-
+        <div className="col-xs-12 cardcont nopadding">
           <div className="meta-data-container col-xs-12 col-md-8 push-md-4 col-lg-7 push-lg-5">
             <h1>{data.original_title}</h1>
 
@@ -58,7 +55,7 @@ class MovieCard extends Component {
             </div>
           </div>
           <div className="poster-container nopadding col-xs-12 col-md-4 pull-md-8 col-lg-5 pull-lg-7 ">
-            <img id="postertest" className='poster' src={posterIMG}/>
+            <img id="postertest" className='poster' src={posterIMG} alt="Poster"/>
           </div>
         </div>
         );
