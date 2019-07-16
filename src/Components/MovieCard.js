@@ -19,6 +19,8 @@ class MovieCard extends Component {
           genresList = nestedDataToString(genres)
           backdropImg = 'https://image.tmdb.org/t/p/original' + data.backdrop;
 
+          console.log('data is: ' + JSON.stringify(data))
+
           // conditional statements for no data
         if (data.vote === 'undefined' || data.vote === 0) {
             data.vote = noData
@@ -56,6 +58,10 @@ class MovieCard extends Component {
           </div>
           <div className="poster-container nopadding col-xs-12 col-md-4 pull-md-8 col-lg-5 pull-lg-7 ">
             <img id="postertest" className='poster' src={posterIMG} alt="Poster"/>
+          </div>
+
+          <div className="poster-container nopadding col-xs-12 col-md-4 pull-md-8 col-lg-5 pull-lg-7 ">
+            <img id="source" className='source' src={TMDBLogo} alt="Data by TMDb"/>
           </div>
         </div>
         );
