@@ -44,7 +44,7 @@ class MovieInformation extends Component {
     }
 
     componentDidMount() {
-        // this.fetchMovie('get out')
+        this.fetchMovie('Forrest Gump')
     }
 }
 
