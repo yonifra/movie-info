@@ -5,17 +5,17 @@
     "author": "Jonathan Fraimorice",
     "license": "MIT",
     "dependencies": {
-        "bloodhound-js": "^1.2.1",
-        "es6-promise": "^4.0.5",
-        "fetch-ie8": "^1.4.3",
+        "bloodhound-js": "^1.2.3",
+        "es6-promise": "^4.2.8",
+        "fetch-ie8": "^1.5.0",
         "moment": "^2.24.0",
         "node-sass": "^4.12.0",
-        "numeral": "^1.4.5",
+        "numeral": "^2.0.6",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-scripts": "3.0.1",
         "typeahead": "^0.2.2",
-        "whatwg-fetch": "^2.0.1"
+        "whatwg-fetch": "^3.0.0"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -40,13 +40,13 @@
         ]
     },
     "devDependencies": {
-        "eslint": "^5.16.0",
+        "eslint": "^6.1.0",
         "eslint-config-react-app": "^4.0.1",
-        "eslint-plugin-flowtype": "^2.50.3",
-        "eslint-plugin-import": "^2.17.2",
-        "eslint-plugin-jsx-a11y": "^6.2.1",
-        "eslint-plugin-react": "^7.13.0",
-        "eslint-plugin-react-hooks": "^1.5.0",
+        "eslint-plugin-flowtype": "^3.12.1",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^1.6.1",
         "prettier": "^1.18.2"
     }
 }
