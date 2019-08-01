@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Box from '@material-ui/core/Box';
 const moviePosterBaseUrl = 'https://image.tmdb.org/t/p/w370_and_h556_bestv2'
 let backdropImg;
 
@@ -8,8 +9,6 @@ class MovieCard extends Component {
     let data = this.props.movie
 
         let posterIMG = moviePosterBaseUrl + data.poster_path;
-
-          // genresList = nestedDataToString(genres)
         backdropImg = 'https://image.tmdb.org/t/p/original' + data.backdrop_path;
 
         console.log('data is: ' + JSON.stringify(data))
@@ -19,6 +18,7 @@ class MovieCard extends Component {
         }
 
         return (
+          <Box>
         <div className="col-xs-12 nopadding modal-dialog-centered">
           <div className="meta-data-container col-xs-12 col-md-8 push-md-4 col-lg-7 push-lg-5 card">
             <h1 className="card-header">{data.original_title}</h1>
@@ -36,6 +36,7 @@ class MovieCard extends Component {
             <img id="postertest" className='img-thumbnail' src={posterIMG} alt="Poster"/>
           </div>
         </div>
+        </Box>
         );
     }
 

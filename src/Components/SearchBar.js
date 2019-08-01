@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InputLabel from '@material-ui/core/InputLabel'
 import {apiKey} from '../constants/api.js'
 
 // TODO: For future development, this will replace the search bar inside the MovieInformation component
@@ -32,10 +33,10 @@ class SearchBar extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <InputLabel>
                         Search for Movie:
                         <input type="text" value={this.state.query} onChange={this.handleChange} />
-                    </label>
+                    </InputLabel>
                     <input type="submit" value="Search" />
                 </form>
             </div>
