@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
-// import * as moment from 'moment';
-let numeral = require('numeral');
-
-const TMDBLogo = "https://www.themoviedb.org/assets/2/v4/logos/312x276-primary-green-74212f6247252a023be0f02a5a45794925c3689117da9d20ffe47742a665c518.png";
 const moviePosterBaseUrl = 'https://image.tmdb.org/t/p/w370_and_h556_bestv2'
-let backdropImg
+let backdropImg;
 
 class MovieCard extends Component {
-    render() {
-        let data = this.props.movie
 
-        let posterIMG = moviePosterBaseUrl + data.poster_path,
-          genres = data.genre_ids,
-          genresList = nestedDataToString(genres)
-          backdropImg = 'https://image.tmdb.org/t/p/original' + data.backdrop_path;
+  render() {
+    let data = this.props.movie
 
-          console.log('data is: ' + JSON.stringify(data))
+        let posterIMG = moviePosterBaseUrl + data.poster_path;
+
+          // genresList = nestedDataToString(genres)
+        backdropImg = 'https://image.tmdb.org/t/p/original' + data.backdrop_path;
+
+        console.log('data is: ' + JSON.stringify(data))
 
         if(data.poster_path === null){
             posterIMG = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSols5HZxlQWyS9JY5d3_L9imbk0LiziHiyDtMZLHt_UNzoYUXs2g';
@@ -46,17 +43,5 @@ class MovieCard extends Component {
         document.body.style.backgroundImage = 'url(' + backdropImg + ')';
     }
 }
-
-function nestedDataToString(nestedData) {
-  let nestedArray = [],
-      resultString;
-  if(nestedData !== undefined){
-    nestedData.forEach(function(item){
-      nestedArray.push(item.name);
-    });
-  }
-  resultString = nestedArray.join(', '); // array to string
-  return resultString;
-};
 
 export default MovieCard;
