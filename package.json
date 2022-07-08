@@ -9,7 +9,7 @@
         "bloodhound-js": "^1.2.3",
         "es6-promise": "^4.2.8",
         "fetch-ie8": "^1.5.0",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "node-sass": "^7.0.0",
         "numeral": "^2.0.6",
         "react": "^16.8.6",
